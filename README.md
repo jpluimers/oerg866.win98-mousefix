@@ -4,6 +4,8 @@ Windows 98 SE / ME Mouse Driver Patch to remove DOS speed bugs and mouse acceler
 
 ***Note: This patch is for Windows 98 Second Edition and Windows Millenium Edition. It MAY work on Windows 98 Gold or even Windows 95, but this has not been tested.***
 
+![](image.png)
+
 ## How to run the patch
 
 The patch is a 32-bit windows application that runs on anything from 95 to 11.
