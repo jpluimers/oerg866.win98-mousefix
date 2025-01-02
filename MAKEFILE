@@ -1,0 +1,19 @@
+CC = wcc386
+AS = wasm
+LD = wlink
+CL = wcl386
+
+CFLAGS = -bt=nt -zq  -wx -za99 -D_WIN32 -5r
+LDFLAGS = SYSTEM NT
+
+OBJ = main.obj decompress\ds_decompress.obj decompress\filesystem.obj decompress\pew.obj decompress\unpacker.obj
+
+all : mousefix.exe
+
+
+mousefix.exe : $(OBJ)
+    $(LD) $(LDFLAGS) NAME mousefix.exe FILE {$(OBJ)}
+
+.c: decompress
+.c.obj : .AUTODEPEND
+        $(CC) $(CFLAGS) -fo=$@ $<

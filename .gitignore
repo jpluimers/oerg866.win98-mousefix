@@ -1,0 +1,9 @@
+*.obj
+*.exe
+*.err
+*.id0
+*.id1
+*.nam
+*.til
+*.bak
+*.vxd
