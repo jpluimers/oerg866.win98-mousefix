@@ -452,7 +452,7 @@ int main(int argc, char *argv[]) {
 
     bool customFilenames = false;
 
-    printf("MouseFix - Windows 98 SE / ME Mouse Driver patcher - V0.1\n");
+    printf("MouseFix - Windows 98 SE / ME Mouse Driver patcher - V0.2\n");
     printf("(C) 2025 E. Voirin (oerg866)\n");
     printf("VMM32 Unpacker code (c) 2022 Jaroslav Hensl\n");
     printf("---------------------------------------------------------\n");
