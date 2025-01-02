@@ -449,8 +449,6 @@ int main(int argc, char *argv[]) {
     const char vmm32VxdSub[] = "\\SYSTEM\\VMM32.VXD";
     const char vmm32SubdirSub[] = "\\SYSTEM\\VMM32";
     const char msmouseVxdSub[] = "\\SYSTEM\\MSMOUSE.VXD";
-    
-    bool success = true;
 
     bool customFilenames = false;
 
@@ -516,17 +514,13 @@ int main(int argc, char *argv[]) {
 
     /* Do the actual patching */
 
-    success = patchVmouseVxd(vmouseVxd);
-
-    if (!success) {
+    if (!patchVmouseVxd(vmouseVxd)) {
         printf("VMOUSE.VXD patching failed!\n");
     }
     
     printf("\n");
-
-    success = patchMsmouseVxd(msmouseVxd);
     
-    if (!success) {
+    if (!patchMsmouseVxd(msmouseVxd)) {
         printf("MSMOUSE.VXD patching failed!\n");
     }
 
