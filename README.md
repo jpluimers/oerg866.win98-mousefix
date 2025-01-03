@@ -22,7 +22,7 @@ There are 3 ways to run the patch:
 
 * You can also give it two filenames to `VMOUSE.VXD` and `MSMOUSE.VXD` respectively:
 
-    Exapmle: `mousefix F:\test\vmouse.vxd F:\test\msmouse.vxd`
+    Example: `mousefix F:\test\vmouse.vxd F:\test\msmouse.vxd`
 
 ## VMM32 VxD extraction code
 
